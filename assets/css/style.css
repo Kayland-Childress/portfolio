@@ -111,6 +111,10 @@ header {
   color: #ddc371;
 }
 
+.open a:hover {
+  color: #ddc371;
+}
+
 .dropdown_menu li {
   padding: 0.7rem;
   display: flex;
@@ -147,8 +151,14 @@ section#hero {
 #hero h2 {
   text-transform: uppercase;
   font-size: 2rem;
-  font-weight: 250;
+  font-weight: 400;
   margin-bottom: 1rem;
+  color: #ddc371;
+}
+
+#hero p a{
+  text-decoration: underline;
+  color: #ddc371;
 }
 
 /* RESPONSIVE DESIGN */
