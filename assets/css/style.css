@@ -183,3 +183,61 @@ section#hero {
     width: unset;
   }
 }
+
+/*======================*/
+/*       PORTFOLIO      */
+/*======================*/
+
+body.portfolio{
+  background:#000;
+  /*background: #ffffff;*/
+
+  section a{
+    color:#ddc371;
+  }
+}
+
+header.pages {
+  /*background: #000000;*/
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(6, [col-] 1fr);
+  grid-template-rows: auto;
+  margin: auto;
+  gap: 20px;
+  border: 1px solid #ddc371;
+  padding: 20px;
+}
+
+#
+
+/* Responsive Images */
+
+div.container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+}
+
+div.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+div.container img{
+  height: 400px;
+  width: 600px;
+  transition: transform .4s ease;
+}
+
+div.container img:hover {
+  -ms-transfrom: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
