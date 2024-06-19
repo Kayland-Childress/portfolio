@@ -201,7 +201,105 @@ header.pages {
   /*background: #000000;*/
 }
 
-main {
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.portfolio-section {
+  margin-bottom: 40px;
+}
+
+.portfolio-section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ddc371;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  position: relative; /* Added to position overlay text */
+}
+
+.overlay {
+  position: relative; /* Container for the image and text */
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.item img:hover {
+  transform: scale(1.05);
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ /* color: white;*/
+  color: #ddc371;
+  font-size: 2em;
+  font-weight: bold;
+  /*background-color: rgba(0, 0, 0, 0.5); /* Optional background for better visibility */
+  padding: 10px;
+  
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .item {
+      flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .items {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .item {
+      flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      width: 95%;
+      padding: 10px;
+  }
+
+  .portfolio-section h2 {
+      font-size: 20px;
+  }
+
+  .items {
+      gap: 10px;
+  }
+
+  .item img {
+      border-radius: 4px;
+  }
+}
+
+
+/*main.grid {
   display: grid;
   grid-template-columns: repeat(6, [col-] 1fr);
   grid-template-rows: auto;
@@ -211,11 +309,43 @@ main {
   padding: 20px;
 }
 
-#
+#web {
+  grid-column: 1 / 7;
+  grid-row: 1 / 2;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
 
+#database {
+  grid-column: 1 / 7;
+  grid-row: 2 / 3;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+#programming {
+  grid-column: 1 / 7;
+  grid-row: 3 / 4;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+#softskills {
+  grid-column: 1 / 7;
+  grid-row: 4 / 5;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+#writing {
+  grid-column: 1 / 7;
+  grid-row: 5 / 6;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}*/
 /* Responsive Images */
 
-div.container {
+/*div.container {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -240,4 +370,4 @@ div.container img:hover {
   -ms-transfrom: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-}
+}*/
