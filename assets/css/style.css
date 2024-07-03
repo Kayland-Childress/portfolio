@@ -61,7 +61,7 @@ header {
 }
 
 .navbar .toggle_btn {
-  color: #fff;
+  color: #ddc371;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
@@ -199,113 +199,30 @@ body.contact {
 body.portfolio{
   background:#000;
   /*background: #ffffff;*/
+   
+}
+body.portfolio a {
+  color:#ffffff;
+  text-decoration: none;
+}
 
-  section a{
-    color:#ddc371;
-  }
+body.portfolio .action_btn:hover {
+  color: #fff;
 }
 
 header.pages {
   /*background: #000000;*/
+  position: relative;
+  padding: 0 2rem;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.portfolio-section {
-  margin-bottom: 40px;
-}
-
-.portfolio-section h2 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: #ddc371;
-}
-
-.items {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.item {
-  flex: 1 1 calc(33.333% - 20px);
-  box-sizing: border-box;
-  display: block;
-  text-align: center;
-  position: relative; /* Added to position overlay text */
-}
-
-.overlay {
-  position: relative; /* Container for the image and text */
-}
-
-.item img {
-  width: 100%;
-  height: auto;
-  
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.item img:hover {
-  transform: scale(1.05);
-}
-
-.text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
- /* color: white;*/
-  color: #ddc371;
-  font-size: 2em;
-  font-weight: bold;
-  /*background-color: rgba(0, 0, 0, 0.5); /* Optional background for better visibility */
-  padding: 10px;
-  
-}
-
-/* Responsive Design */
-@media (max-width: 1200px) {
-  .item {
-      flex: 1 1 calc(50% - 20px);
-  }
-}
-
-@media (max-width: 768px) {
-  .items {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .item {
-      flex: 1 1 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-      width: 95%;
-      padding: 10px;
-  }
-
-  .portfolio-section h2 {
-      font-size: 20px;
-  }
-
-  .items {
-      gap: 10px;
-  }
-
-  .item img {
-      border-radius: 4px;
-  }
-}
-
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
 
 /*main.grid {
   display: grid;
