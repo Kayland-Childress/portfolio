@@ -216,13 +216,27 @@ header.pages {
   padding: 0 2rem;
 }
 
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
-);
+section#work {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  color:#ddc371;
+  align-content: center;
+  justify-content: space-around;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+figcaption {
+  text-transform: uppercase;
+}
 
 /*main.grid {
   display: grid;
