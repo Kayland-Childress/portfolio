@@ -1,98 +1,1140 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Kayland Childress</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Kayland Childress | Portfolio" />
-    <meta name="author" content="Kayland Childress" />
-    <!-- Links -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jacques+Francois&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/img/logo/logo-black-16.png">
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/logo/logo-black-16.png" rel="icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jacques+Francois&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
   </head>
 
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZ2WDKYB2X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/logo/logo-gold-60.png" alt="KC" />
+          <!--<h1 class="sitename">Kayland Childress</h1>-->
+        </a>
 
-  gtag('config', 'G-CZ2WDKYB2X');
-</script>
-
-  <body>
-    <header>
-      <div class="navbar">
-        <div class="logo"><a href="index.html"><img src="assets/img/logo/logo-gold-60.png"></a></div>
-        
-        <ul class="links">
-          <li><a href= "index.html">Home</a></li>
-          <li><a href= "about.html">About</a></li>
-          <li><a href= "portfolio.html">Portfolio</a></li>
-          <li><a href= "resume/resume.html" target="_blank">Resume</a></li>
-        </ul>
-        
-        <a href= "contact.html" target="_blank" class= "action_btn">Let's Talk</a>
-        
-        <div class= "toggle_btn">
-          <i class="fa-solid fa-bars"></i>
-          
-        </div>
-      </div>
-      
-      <div class= "dropdown_menu">
-        <li><a href= "index.html">Home</a></li>
-        <li><a href= "about.html">About</a></li>
-        <li><a href= "portfolio.html">Portfolio</a></li>
-        <li><a href= "resume/resume.html" target="_blank">Resume</a></li>
-        <li><a href= "contact.html" target="_blank" class= "action_btn">Let's Talk</a></li>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="#hero" class="active">Home<br /></a>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
       </div>
     </header>
-      
-    <main>
-	  <!-- Hero -->	
-      <section id="hero">
-        <h1>Kayland Childress</h1>
-		<h2>Web Developer | Graphic Designer</h2>
 
-        <p>
-          As a seasoned Web Developer and Graphic Designer, I'm dedicated to crafting exceptional digital experiences.
-        </p>
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
+        <img src="assets/img/me/me-1440.jpg" alt="" data-aos="fade-in" />
 
-        <p>
-          From innovative websites to striking visual identities, my work blends technical expertise with creative vision to deliver results that exceed expectations.
-        </p>
-
-        <p>
-          Whether you're a potential client seeking dynamic digital solutions or an employer in search of top-tier talent, explore my portfolio to see how I can add value to your projects. Let's collaborate to bring your ideas to life.
-        </p>
-
-        <p>
-          <a href="contact.html">Contact me</a> to discuss how I can help elevate your digital presence.
-        </p>
-
+        <div
+          class="container d-flex flex-column align-items-center justify-content-center text-center"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <h1>Kayland Childress</h1>
+          <h2>
+            <span
+              class="typed"
+              data-typed-items="Web Developer, Graphic Designer, Artist, Freelancer"
+            ></span>
+          </h2>
+        </div>
       </section>
-    </main>  
-      
-    <script>
-      const toggleBtn = document.querySelector('.toggle_btn')
-      const toggleBtnIcon = document.querySelector('.toggle_btn i')
-      const dropDownMenu = document.querySelector('.dropdown_menu')
-      
-      toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle('open')
-        const isOpen = dropDownMenu.classList.contains('open')
-        
-        toggleBtnIcon.classList= isOpen
-          ? 'fa-solid fa-xmark'
-          : 'fa-solid fa-bars'
-      }
-    </script>  
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-md-6">
+              <div class="row justify-content-between gy-4">
+                <div class="col-lg-5">
+                  <img
+                    src="assets/img/portfolio1/headshot1.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-lg-7 about-info">
+                  <p><strong>Name: </strong> <span>Kayland Childress</span></p>
+                  <p>
+                    <strong>Profile: </strong>
+                    <span>Web Developer | Graphic Designer</span>
+                  </p>
+                  <p>
+                    <strong>Email: </strong>
+                    <span>kdchildress94@gmail.com</span>
+                  </p>
+                  <p><strong>Phone: </strong> <span>(501) 672-3385</span></p>
+                </div>
+              </div>
+
+              <div class="skills-content skills-animation">
+                <h5>Skills</h5>
+
+                <div class="progress">
+                  <span class="skill"
+                    ><span>HTML</span> <i class="val">100%</i></span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="100"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <!-- End Skills Item -->
+
+                <div class="progress">
+                  <span class="skill"
+                    ><span>CSS</span> <i class="val">90%</i></span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <!-- End Skills Item -->
+
+                <div class="progress">
+                  <span class="skill"
+                    ><span>JavaScript</span> <i class="val">55%</i></span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="55"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <!-- End Skills Item -->
+
+                <div class="progress">
+                  <span class="skill"
+                    ><span>Adobe Creative Suite</span>
+                    <i class="val">90%</i></span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <!-- End Skills Item -->
+
+                <div class="progress">
+                  <span class="skill"
+                    ><span>Microsoft Office Suite</span>
+                    <i class="val">90%</i></span
+                  >
+                  <div class="progress-bar-wrap">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </div>
+                <!-- End Skills Item -->
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="about-me">
+                <h4>About Me</h4>
+                <p>
+                  As a seasoned Web Developer and Graphic Designer, I'm
+                  dedicated to crafting exceptional digital experiences.
+                </p>
+
+                <p>
+                  From innovative websites to striking visual identities, my
+                  work blends technical expertise with creative vision to
+                  deliver results that exceed expectations.
+                </p>
+
+                <p>
+                  Whether you're a potential client seeking dynamic digital
+                  solutions or an employer in search of top-tier talent, explore
+                  my portfolio to see how I can add value to your projects.
+                  Let's collaborate to bring your ideas to life.
+                </p>
+
+                <p>
+                  <a href="#contact">Contact me</a> to discuss how I can help
+                  elevate your digital presence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Resume Section -->
+      <section id="resume" class="resume section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+          <p>Web Developer | Graphic Designer</p>
+          <h4>
+            <a href="assets/img/portfolio1/resume.pdf"
+              ><i class="bi bi-download"></i
+            ></a>
+          </h4>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Sumary</h3>
+
+              <div class="resume-item pb-0">
+                <h4>Kayland Childress</h4>
+                <p>
+                  <em
+                    >Innovative and deadline-driven Web Developer and Graphic
+                    Designer with 3+ years of experience designing and
+                    developing user-centered websites and digital/print
+                    marketing material from initial concept to final, polished
+                    deliverable.</em
+                  >
+                </p>
+                <ul>
+                  <li>Benton, AR</li>
+                  <li>(501) 672-3385</li>
+                  <li>kdchildress94@gmail.com</li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Bachelor of Arts in Web Development and Design</h4>
+                <h5>2025</h5>
+                <p><em>University of Arkansas, Little Rock, AR</em></p>
+                <p>
+                  I earned my Bachelor of Arts in Web Development and Design
+                  from UALR. My major coursework included Web Programming, User
+                  Experience Design, and Graphic Design. Throughout the program,
+                  I gained proficiency in HTML, CSS, JavaScript, and various web
+                  development frameworks. I also developed strong skills in
+                  visual design, usability testing, and responsive design
+                  principles.
+                </p>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Associate of Arts in General Studies</h4>
+                <h5>2022</h5>
+                <p><em>National Park College, Hot Springs, AR</em></p>
+                <p>
+                  I earned my Associate of Arts in General Studies from NPC.
+                  This program provided a well-rounded education, covering a
+                  broad range of subjects including English, Mathematics, Social
+                  Sciences, Natural Sciences, and Humanities. Through diverse
+                  coursework, I developed strong analytical, communication, and
+                  critical thinking skills. This degree allowed me to explore
+                  various fields of study, helping me to become a more versatile
+                  and adaptable individual.
+                </p>
+              </div>
+              <!-- Edn Resume Item -->
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <h4>Technical Support</h4>
+                <h5>2021 - Present</h5>
+                <p><em>Nashville, TN </em></p>
+                <ul>
+                  <li>
+                    Diagnose and troubleshoot hardware, software, and network
+                    issues.
+                  </li>
+                  <li>
+                    Pached software and installed new versions to eliminate
+                    security problems and protect data.
+                  </li>
+                  <li>
+                    Filed insurance claims for deviceswith issues unresolvable
+                    with troubleshooting.
+                  </li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>EKG Technician</h4>
+                <h5>2020 - 2021</h5>
+                <p><em>Little Rock, AR</em></p>
+                <ul>
+                  <li>
+                    Scheduled patients for testing and conducted folow up calls
+                    to confirm and answer questions.
+                  </li>
+                  <li>
+                    Edited final test results to provide to physician for
+                    analysis.
+                  </li>
+                  <li>
+                    Closely monitored patient condition during tests and alerted
+                    physician if patient became stressed or conditioned.
+                  </li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
+              <div class="resume-item">
+                <h4>Monitor Technician/Unit Secretary</h4>
+                <h5>2019 - 2021</h5>
+                <p><em>Benton, AR & Little Rock, AR</em></p>
+                <ul>
+                  <li>
+                    Hands-on experience monitoring cardiac rhythms on multiple
+                    floors.
+                  </li>
+                  <li>
+                    Efficient use of EMR for paperwork, billing, patient
+                    updates, and discharges.
+                  </li>
+                  <li>
+                    Manages phone inquires, facilitates call transfers, and
+                    initiates hospital-wide codes.
+                  </li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Resume Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>
+            I provide a diverse range of creative services tailored to meet your
+            unique needs. From custom portraits that capture your essence, to
+            professional graphic design that brings your brand to life, and web
+            development that builds your online presence, I am dedicated to
+            delivering high-quality, personalized solutions that exceed your
+            expectations. Explore my <a href="#portfolio">portfolio</a> to see
+            how I can help you achieve your vision.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-globe"></i>
+                </div>
+                <a href="service-details-web.html" class="stretched-link">
+                  <h3>Web Development</h3>
+                </a>
+                <p>
+                  Custom web development services, specializing in creating
+                  responsive and user-friendly websites that help business
+                  establish a strong online presence and achieve their digital
+                  goals.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <i class="bi bi-flower1"></i>
+                </div>
+                <a href="service-details-design.html" class="stretched-link">
+                  <h3>Graphic Design</h3>
+                </a>
+                <p>
+                  Professional graphic design services, delivering visually
+                  stunning and impactful designs that effectively communicate
+                  your brand's message and engage your target audience.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item position-relative">
+                <div class="icon">
+                  <!--<i class="bi bi-easel"></i>-->
+                  <i class="bi bi-pencil"></i>
+                </div>
+                <a href="service-details-art.html" class="stretched-link">
+                  <h3>Custom Portraits</h3>
+                </a>
+                <p>
+                  Personalized, high-quality custom portraits that capture the
+                  unique essence and personality of each individual, providing a
+                  cherished keepsake or perfect gift for any occasion.
+                </p>
+              </div>
+            </div>
+            <!-- End Service Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Services Section -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p></p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul
+              class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-web">Web Development</li>
+              <li data-filter=".filter-js">JavaScript</li>
+              <li data-filter=".filter-design">Graphic Design</li>
+              <li data-filter=".filter-writing">Document Design</li>
+              <li data-filter=".filter-art">Art</li>
+            </ul>
+            <!-- End Portfolio Filters -->
+
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <!-------------------->
+              <!--   Web Design   -->
+              <!-------------------->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <img
+                  src="assets/img/portfolio1/the-shop.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>The Shop</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/the-shop.jpg"
+                    title="App 1"
+                    data-gallery="portfolio-gallery-web"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <img
+                  src="assets/img/portfolio1/blanchard-springs.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Blanchard Springs Caverns</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/blanchard-springs.jpg"
+                    title="Product 1"
+                    data-gallery="portfolio-gallery-web"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <img
+                  src="assets/img//portfolio1/buffalo-backcountry-escape.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Buffalo Backcountry Escape</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/buffalo-backcountry-escape.jpg"
+                    title="Product 1"
+                    data-gallery="portfolio-gallery-web"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <img
+                  src="assets/img/portfolio1/wedding.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Madison and Brad Say I Do</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img//portfolio1/wedding.jpg"
+                    title="Product 1"
+                    data-gallery="portfolio-gallery-web"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <!-------------------->
+              <!--   JavaScript   -->
+              <!-------------------->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-js"
+              >
+                <img
+                  src="assets/img/portfolio1/mars-rover.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Mars Rover</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/mars-rover.jpg"
+                    title="Branding 1"
+                    data-gallery="portfolio-gallery-js"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-js"
+              >
+                <img
+                  src="assets/img/portfolio1/currency.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Currancy Converter</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/currency.jpg"
+                    title="Branding 1"
+                    data-gallery="portfolio-gallery-js"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-js"
+              >
+                <img
+                  src="assets/img/portfolio1/unit-converter.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Unit Converter</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/unit-converter.jpg"
+                    title="Branding 1"
+                    data-gallery="portfolio-gallery-js"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <!-------------------->
+              <!-- Graphic Design -->
+              <!-------------------->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design"
+              >
+                <img
+                  src="assets/img/portfolio1/netflix.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Netflix Title Card</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/netflix.jpg"
+                    title="Branding 1"
+                    data-gallery="portfolio-gallery-design"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design"
+              >
+                <img
+                  src="assets/img/portfolio1/event-poster.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Event Poster</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/event-poster.jpg"
+                    title="App 2"
+                    data-gallery="portfolio-gallery-design"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design"
+              >
+                <img
+                  src="assets/img/portfolio1/magazine-cover.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Magazine Cover</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/magazine-cover.jpg"
+                    title="App 2"
+                    data-gallery="portfolio-gallery-design"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-design"
+              >
+                <img
+                  src="assets/img/portfolio1/kc-cosmetics.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>KC Cosmetics</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/kc-cosmetics.jpg"
+                    title="Product 2"
+                    data-gallery="portfolio-gallery-design"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <!--------------------->
+              <!-- Document Design -->
+              <!--------------------->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-writing"
+              >
+                <img
+                  src="assets/img/portfolio1/cover-letter.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Cover Letter</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/cover-letter.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-writing"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-writing"
+              >
+                <img
+                  src="assets/img/portfolio1/internal-proposal.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Internal Proposal</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/internal-proposal.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-writing"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <!------------------->
+              <!--      Art      -->
+              <!------------------->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art"
+              >
+                <img
+                  src="assets/img/portfolio1/couple1.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Couple 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/couple1.jpg"
+                    title="App 3"
+                    data-gallery="portfolio-gallery-art"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art"
+              >
+                <img
+                  src="assets/img/portfolio1/couple2.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Couple 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/couple2.jpg"
+                    title="Product 3"
+                    data-gallery="portfolio-gallery-art"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art"
+              >
+                <img
+                  src="assets/img/portfolio1/couple3.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Couple 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/couple3.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-art"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art"
+              >
+                <img
+                  src="assets/img/portfolio1/waterlady.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Water Lady</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/waterlady.jpg"
+                    title="Branding 2"
+                    data-gallery="portfolio-gallery-art"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art"
+              >
+                <img
+                  src="assets/img/portfolio1/bird.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Bird</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a
+                    href="assets/img/portfolio1/bird.jpg"
+                    title="Branding 3"
+                    data-gallery="portfolio-gallery-art"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="portfolio-details.html"
+                    title="More Details"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+            </div>
+            <!-- End Portfolio Container -->
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Let's Talk</h2>
+          <p>
+            Please fill out the form below to schedule your free consultation.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-5">
+              <div class="col-lg-4">
+                <div class="info-item d-flex align-items-center">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h3>Address</h3>
+                    <p>Benton, AR 72015</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Info Item -->
+
+              <div class="col-lg-4">
+                <div class="info-item d-flex align-items-center">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h3>Email Me</h3>
+                    <p>letstalk.k.designs@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Info Item -->
+            </div>
+          </div>
+
+          <form
+            action="forms/contact.php"
+            method="post"
+            class="php-email-form"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div data-tf-live="01J2JMZ375XPKD1VMD7ANG9VZB"></div>
+            <script src="//embed.typeform.com/next/embed.js"></script>
+          </form>
+          <!-- End Contact Form -->
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer accent-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            <span>&copy;2024</span>
+            <strong class="px-1 sitename">Kayland Childress</strong>
+          </p>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href=""><i class="bi bi-github"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
