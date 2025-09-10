@@ -194,7 +194,7 @@
    * Init swiper sliders
    */
   function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
+    document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
       let config = JSON.parse(
         swiperElement.querySelector(".swiper-config").innerHTML.trim()
       );
@@ -253,4 +253,35 @@
   }
   window.addEventListener("load", navmenuScrollspy);
   document.addEventListener("scroll", navmenuScrollspy);
+
+  // FAQ Drop Down
+  document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".faq .faq-item");
+
+    // Click to toggle
+    items.forEach((item) => {
+      const header = item.querySelector("h3");
+      const toggle = item.querySelector(".faq-toggle");
+
+      function openThisOnly() {
+        // optional: accordion behavior (one open at a time)
+        items.forEach((i) => {
+          if (i !== item) i.classList.remove("faq-active");
+        });
+        item.classList.toggle("faq-active");
+      }
+
+      header?.addEventListener("click", openThisOnly);
+      toggle?.addEventListener("click", openThisOnly);
+
+      // accessibility: allow Enter/Space on header
+      header?.setAttribute("tabindex", "0");
+      header?.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          openThisOnly();
+        }
+      });
+    });
+  });
 })();
