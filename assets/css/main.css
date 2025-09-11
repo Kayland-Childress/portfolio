@@ -852,6 +852,7 @@ section,
 .clients {
   padding-top: 30px;
   padding-bottom: 60px;
+  background-color: #f9f9f9;
 }
 
 .clients .client-item {
@@ -1180,6 +1181,12 @@ section,
 /*--------------------------------------------------------------
   # Pricing Section
   --------------------------------------------------------------*/
+.pricing .container {
+  background-color: var(--surface-color);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
 .pricing .pricing-item {
   border-bottom: 1px dashed
     color-mix(in srgb, var(--default-color), transparent 60%);
@@ -1299,7 +1306,7 @@ section,
 
 .testimonials:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: #000000;
   position: absolute;
   inset: 0;
   z-index: 2;
