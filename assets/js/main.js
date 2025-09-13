@@ -112,9 +112,9 @@
     new Typed(".typed", {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 75,
-      backSpeed: 50,
-      backDelay: 1000,
+      typeSpeed: 50,
+      backSpeed: 30,
+      backDelay: 1200,
     });
   }
 
@@ -284,4 +284,87 @@
       });
     });
   });
+
+  // Service Details Testimonial Rotation
+  // === Rotating testimonial card ===
+  // Usage: put this in assets/js/main.js (after any other DOM code).
+  // HTML structure expected:
+  // <div class="testimonial-rotate" data-interval="5000">
+  //   <div class="tr-card">
+  //     <blockquote class="tr-quote active">...</blockquote>
+  //     <blockquote class="tr-quote">...</blockquote>
+  //     ...
+  //   </div>
+  // </div>
+
+  (function () {
+    function initTestimonialRotators(root) {
+      var scope = root || document;
+      var wraps = scope.querySelectorAll('.testimonial-rotate');
+
+      wraps.forEach(function (wrap) {
+        var quotes = wrap.querySelectorAll('.tr-quote');
+        if (quotes.length < 2) return; // nothing to rotate
+
+        // start index: use existing .active or default to 0
+        var i = Array.prototype.findIndex.call(quotes, function (q) {
+          return q.classList.contains('active');
+        });
+        if (i < 0) {
+          i = 0;
+          quotes[0].classList.add('active');
+        }
+
+        var interval = parseInt(wrap.getAttribute('data-interval') || '5000', 10);
+        var timer = null;
+
+        function showNext() {
+          quotes[i].classList.remove('active');
+          i = (i + 1) % quotes.length;
+          quotes[i].classList.add('active');
+        }
+        function start() {
+          if (timer) return;
+          timer = setInterval(showNext, interval);
+        }
+        function stop() {
+          if (!timer) return;
+          clearInterval(timer);
+          timer = null;
+        }
+
+        // Pause on hover
+        wrap.addEventListener('mouseenter', stop);
+        wrap.addEventListener('mouseleave', start);
+
+        // Pause when tab is hidden; resume when visible
+        document.addEventListener('visibilitychange', function () {
+          if (document.hidden) stop();
+          else start();
+        });
+
+        // Expose controls on the element (optional)
+        wrap.__trStart = start;
+        wrap.__trStop = stop;
+
+        // Go!
+        start();
+      });
+    }
+
+    // Expose globally (optional), in case you need to re-init after AJAX
+    window.KC = window.KC || {};
+    window.KC.initTestimonialRotators = initTestimonialRotators;
+
+    // Auto-init on DOM ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function () {
+        initTestimonialRotators(document);
+      });
+    } else {
+      initTestimonialRotators(document);
+    }
+  })();
+
+
 })();

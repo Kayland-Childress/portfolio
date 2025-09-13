@@ -1206,6 +1206,17 @@ section,
   font-size: 18px;
   color: var(--accent-color);
 }
+
+.icon-gold:hover {
+  color: var(--accent-color); /* brighter gold */
+}
+
+.icon-sm {
+  font-size: 12px; /* smaller for superscript */
+  vertical-align: super; /* keeps it up at the top */
+  color: #daa520; /* gold */
+}
+
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
@@ -1750,6 +1761,167 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+.link-toggle {
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+.link-toggle:hover {
+  text-decoration: underline;
+}
+.link-toggle .bi {
+  transition: transform 0.2s ease;
+}
+.link-toggle.collapsed .bi {
+  transform: rotate(0deg);
+}
+.link-toggle:not(.collapsed) .bi {
+  transform: rotate(180deg);
+}
+
+/* Pricing comparison table */
+.pricing-compare .table {
+  background: var(--surface-color, #fff);
+  border-radius: 18px;
+  overflow: hidden; /* round the table corners */
+  box-shadow: 0 5px 60px rgba(0,0,0,.08);
+}
+
+.pricing-compare thead th {
+  vertical-align: bottom;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+  background: rgba(0,0,0,.015);
+}
+
+.pricing-compare .feature-col { 
+  width: 36%;
+  min-width: 220px;
+}
+
+.pricing-compare .plan-col { 
+  text-align: center;
+  width: 21%;
+}
+
+.pricing-compare .plan-name { font-weight: 700; }
+.pricing-compare .plan-price { font-size: .95rem; color: #555; }
+.pricing-compare .plan-badge {
+  display: inline-block;
+  font-size: .7rem;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  background: rgba(218,165,32,.12);
+  color: #000;
+  border-radius: 999px;
+  padding: .25rem .5rem;
+  margin-bottom: .25rem;
+}
+
+.pricing-compare .recommended {
+  outline: 2px solid rgba(218,165,32,.25);
+  outline-offset: -6px; /* inset-outline effect */
+}
+
+.pricing-compare tbody th.feature {
+  font-weight: 600;
+}
+
+.pricing-compare .check { color: var(--accent-color); font-size: 1.1rem; }
+.pricing-compare .dash  { color: #999;    font-size: 1.1rem; }
+
+.pricing-compare .note { color:#555; }
+
+@media (max-width: 992px) {
+  .pricing-compare .feature-col { width: 44%; }
+  .pricing-compare .plan-col    { width: auto; }
+}
+
+/* Subtle row separators */
+.pricing-compare tbody tr + tr td,
+.pricing-compare tbody tr + tr th {
+  border-top: 1px solid rgba(0,0,0,.06);
+}
+
+/* Rotating testimonial card (sidebar) */
+.testimonial-rotate .tr-card {
+  background: var(--surface-color, #fff);
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.06);
+  padding: 16px 18px;
+  position: relative;
+  overflow: hidden;
+  min-height: 120px;
+}
+
+/* gold accent line */
+.testimonial-rotate .tr-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px; background: #daa520;
+}
+
+/* quotes stack and crossfade with a slight tilt */
+.testimonial-rotate .tr-quote {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: rotateX(-6deg) translateY(6px);
+  transition: opacity .45s ease, transform .45s ease;
+  margin: 0;
+  padding: 8px 0;
+}
+.testimonial-rotate .tr-quote.active {
+  position: relative;
+  opacity: 1;
+  transform: none;
+}
+
+.testimonial-rotate blockquote p {
+  margin: 0 0 6px 0;
+  font-size: .95rem;
+}
+.testimonial-rotate blockquote footer {
+  font-size: .8rem; color: #555;
+}
+
+/* optional: pause hint on hover cursor */
+.testimonial-rotate { cursor: default; }
+
+/* Center the whole quote area inside the card */
+.testimonial-rotate .tr-card {
+  display: grid;           /* enables easy centering */
+  place-items: center;     /* centers both axes */
+  min-height: 160px;       /* tweak to taste */
+}
+
+/* Each quote fills the card and centers its own text */
+.testimonial-rotate .tr-quote {
+  position: absolute;      /* keep for crossfade overlap */
+  inset: 0;                /* fill the card */
+  display: grid;           /* center the text block itself */
+  align-content: left;
+  justify-items: center;
+  text-align: left;      /* center text */
+  padding: 16px;           /* even top/bottom spacing */
+  opacity: 0;
+  transform: rotateX(-6deg) translateY(6px);
+  transition: opacity .45s ease, transform .45s ease;
+}
+
+/* Active state: just show it (no position change) */
+.testimonial-rotate .tr-quote.active {
+  opacity: 1;
+  transform: none;
+}
+
+/* Optional: center the footer nicely under the quote */
+.testimonial-rotate blockquote footer {
+  justify-self: left;
+}
+
 
 /*--------------------------------------------------------------
   # Starter Section Section
